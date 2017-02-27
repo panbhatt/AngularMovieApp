@@ -15,3 +15,9 @@
 #### npm install
 #### npm start
 #### visit http://localhost:3000
+
+
+###Login page
+![alt tag](https://github.com/panbhatt/AngularMovieApp/blob/master/githubimages/Search.PNG)
+
+
