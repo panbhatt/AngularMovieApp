@@ -18,7 +18,7 @@
 
 
 ###Login page
-![alt tag](https://github.com/panbhatt/AngularMovieApp/blob/master/githubimages/loginPage.PNG)
+![alt tag](https://github.com/panbhatt/AngularMovieApp/blob/master/githubimages/loginpage.PNG)
 
 ### Home page
 ![alt tag](https://github.com/panbhatt/AngularMovieApp/blob/master/githubimages/homepage.PNG)
