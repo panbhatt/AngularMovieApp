@@ -18,6 +18,11 @@
 
 
 ###Login page
+![alt tag](https://github.com/panbhatt/AngularMovieApp/blob/master/githubimages/loginPage.PNG)
+
+### Home page
+![alt tag](https://github.com/panbhatt/AngularMovieApp/blob/master/githubimages/homepage.PNG)
+
+
+### Search IMDB Database
 ![alt tag](https://github.com/panbhatt/AngularMovieApp/blob/master/githubimages/Search.PNG)
-
-
