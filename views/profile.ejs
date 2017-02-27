@@ -1,0 +1,64 @@
+<!doctype html>
+<html >
+
+<head>
+  <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <base href="/"/>
+   <title>Movie Collection</title>
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+   <link rel="stylesheet" type="text/css" href="css/app.css"/>
+   <style>
+        body         { padding-top:8px; word-wrap:break-word; }
+   </style>
+</head>
+<body ng-app="movieApp">
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span>Movie Collection</h1>
+        <a href="/logout" class="btn btn-default btn-sm pull-right">Logout</a>
+
+
+        <br/><br/>
+    </div>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" ui-sref="movies">The Movie App</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a ui-sref="movies">Home</a></li>
+                    <li><a ui-sref="search">Inventory</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row top-buffer">
+            <div class="col-xs-8 col-xs-offset-2">
+                <div ui-view></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+    <script type="text/javascript" src="js/services.js"></script>
+    <script type="text/javascript" src="js/directives.js"></script>
+    <script type="text/javascript" src="js/filters.js"></script>
+    <script type="text/javascript" src="lib/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="lib/angular-resource.min.js"></script>
+
+    <div class="footer">
+        <h3>Developed as a Interview assignment </h3>
+    </div>
+
+</div>
+
+</body>
+</html>

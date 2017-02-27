@@ -1,0 +1,53 @@
+
+<div class="form-group">
+    <label for="title" class="col-sm-2 control-label">Enter Title </label>
+    <div class="col-sm-8">
+        <input type="text" ng-model="title" class="form-control" id="title" placeholder="Movie Title Here"/>
+
+    </div>
+
+
+</div>
+<div>
+
+</div>
+
+<div>
+
+    <a class="btn btn-primary" ng-click="searchMovie()">Search</a>
+</div>
+
+<table ng-show="showResults" class="table table-striped">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Genre</th>
+      <th>Actor</th>
+    </tr>
+</thead>
+<tbody>
+  <tr ng-repeat="x in movieList | orderBy : 'title'">
+
+    <td>
+          <div class="col-sm-8"><img src="{{x.poster}}" width="80px" height="100px"> </div>
+    </td>
+    <td>
+          <div class="col-sm-12"><b>{{x.title}}</b> </div>
+    </td>
+
+    <td>
+            <div class="col-sm-12"><b>{{x.year}}</b> </div>
+    </td>
+    <td>
+            <div class="col-sm-8"><b>{{x.genres.join()}}</b> </div>
+    </td>
+    <td>
+            <div class="col-sm-12"><b>{{x.actors.join()}}</b> </div>
+    </td>
+    <td>
+        <a class="btn btn-primary" ng-click="addMovie($index)">Add to collection</a>
+    </td>
+  </tr>
+</tbody.
+</table>
